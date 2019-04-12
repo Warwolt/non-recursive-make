@@ -1,6 +1,7 @@
 # work in progress "non-recursive" makefile
 
-UNIT_TESTING = 'TRUE' # include test files in this build
+# make won't resolve ifeq true if there are any spaces in the below statement!
+UNIT_TESTING :='TRUE'# include test files in this build
 
 PROJ_ROOT = ..
 APP_ROOT = $(PROJ_ROOT)/app

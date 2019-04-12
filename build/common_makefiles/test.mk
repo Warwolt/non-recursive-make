@@ -3,7 +3,7 @@
 #
 # Included by module-specific makefiles, that define MODULE_DIR
 
-ifeq '$(UNIT_TESTING)' 'TRUE'
+ifeq ($(UNIT_TESTING),'TRUE')
 
 # Define folders
 TEST_DIR := $(MODULE_DIR)/test
